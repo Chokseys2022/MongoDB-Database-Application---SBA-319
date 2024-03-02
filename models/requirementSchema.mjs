@@ -11,10 +11,10 @@ const requiremntSchema = new mongoose.Schema({
   },
   reqGpa: {
     gpa: number,
-    graduatingYear: number,
+    graduatingYear: Number,
     transcript: Boolean,
     required: true,
   },
 });
 
-export default mongoose.model("Fruits", fruitSchema);
+export default mongoose.model("Mongodb database application", requirementSchema);

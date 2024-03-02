@@ -4,15 +4,15 @@ import mongoose from "mongoose";
 const essaySchema = new mongoose.Schema({
   topic: {
     tName: String,
-    tCount:Number,
+    tCount: Number,
     required: true,
     min: 1,
   },
   group: {
-    gName: string,
-    gAward: number,
+    gName: String,
+    gAward: Number,
     required: true,
   },
-  });
+});
 
-export default mongoose.model("Fruits", fruitSchema);
+export default mongoose.model('Mongodb database application', essaySchema);
